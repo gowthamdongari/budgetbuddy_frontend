@@ -85,6 +85,113 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+This is the frontend for the Finance Tracker application, a web app designed to help you manage your finances by tracking transactions, setting budgets, and achieving financial goals. This project is built using React, with GraphQL and gRPC for backend communication.
+
+## Table of Contents
+- [About The Project](#about-the-project)
+- [Table of Contents](#table-of-contents)
+- [Features](#features)
+- [Project Structure](#project-structure)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+
+## Features
+- User Authentication (Login, Register, OAuth)
+- Dashboard with an overview of recent transactions
+- Add, view, and manage transactions
+- Budget management
+- Financial goal setting and tracking
+- Shared budgets with other users
+- Real-time updates with gRPC
+
+## Project Structure
+```bash
+finance-tracker-frontend/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   │       ├── main.css
+│   │       └── variables.css
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── Auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── OAuthCallback.jsx
+│   │   ├── Dashboard/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Overview.jsx
+│   │   │   └── RecentTransactions.jsx
+│   │   ├── Transaction/
+│   │   │   ├── AddTransaction.jsx
+│   │   │   ├── TransactionList.jsx
+│   │   │   └── TransactionItem.jsx
+│   │   ├── Budget/
+│   │   │   ├── BudgetManagement.jsx
+│   │   │   ├── BudgetItem.jsx
+│   │   │   └── AddBudget.jsx
+│   │   ├── Goals/
+│   │   │   ├── Goals.jsx
+│   │   │   ├── GoalItem.jsx
+│   │   │   └── AddGoal.jsx
+│   │   └── Shared/
+│   │       ├── SharedBudgets.jsx
+│   │       ├── SharedBudgetItem.jsx
+│   │       └── AddSharedBudget.jsx
+│   ├── contexts/
+│   │   ├── AuthContext.jsx
+│   │   └── BudgetContext.jsx
+│   ├── graphql/
+│   │   ├── queries.js
+│   │   └── mutations.js
+│   ├── grpc/
+│   │   ├── grpcClient.js
+│   │   └── transactionService.js
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   ├── LoginPage.jsx
+│   │   ├── RegisterPage.jsx
+│   │   ├── DashboardPage.jsx
+│   │   ├── AddTransactionPage.jsx
+│   │   ├── BudgetPage.jsx
+│   │   ├── GoalsPage.jsx
+│   │   └── SharedBudgetsPage.jsx
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── transactionService.js
+│   │   ├── budgetService.js
+│   │   ├── goalService.js
+│   │   └── sharedBudgetService.js
+│   ├── utils/
+│   │   ├── api.js
+│   │   └── helpers.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── setupTests.js
+├── .gitignore
+├── package.json
+├── README.md
+├── vite.config.js
+└── yarn.lock
+```
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
