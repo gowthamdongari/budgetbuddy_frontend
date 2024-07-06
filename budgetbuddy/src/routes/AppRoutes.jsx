@@ -9,6 +9,7 @@ function AppRoutes() {
     <>
     <Routes>
       <Route path='/' element={<HomePage/>}></Route>
+        
       <Route path='/Login' element={<LoginPage/>}></Route>
       <Route path='/Registration' element={<RegistrationPage/>}></Route>
     </Routes>
