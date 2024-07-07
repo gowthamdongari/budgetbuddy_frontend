@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-import SideNavBar from "../components/common/SideNavBar";
+import SideNavBar from "../components/sidenavbar/SideNavBar";
 import Footer from "../components/common/Footer";
-import TopNavBar from "../components/common/TopNavBar";
+import TopNavBar from "../components/topnavbar/TopNavBar";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
           <div className="h-full">
             {/* TopNavBar */}
             <TopNavBar />
-            <div className="pt-5s mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">
+            <div className="pt-5s mx-auto bg-navy-800/10 mb-auto h-full min-h-[84vh] p-2 md:pr-2">
               <Outlet />
             </div>
             <div className="p-3">
