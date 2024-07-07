@@ -1,13 +1,13 @@
 import React from "react";
 // import Footer from "components/footer/FooterAuthDefault";
-import authImg from ".././assets/images/auth.png";
+import authImg from "../../assets/images/auth.png";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
-import InputField from "../components/fields/InputField";
+import InputField from "../fields/InputField";
 // import FixedPlugin from "components/fixedPlugin/FixedPlugin";
 
-export default function AuthLoginPage() {
+export default function LoginPage() {
   document.documentElement.dir = "ltr";
 
   return (
@@ -99,12 +99,11 @@ export default function AuthLoginPage() {
                     <span className="text-sm font-medium text-navy-700 dark:text-gray-600">
                       Not registered yet?
                     </span>
-                    <a
-                      href=""
-                      className="ml-1 text-sm font-medium text-brand-500 hover:text-brand-600 dark:text-white"
-                    >
-                      Create an account
-                    </a>
+                    <Link to="/Registration">
+                      <span className="ml-1 text-sm font-medium text-brand-500 hover:text-brand-600 dark:text-white">
+                        Register
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
