@@ -6,7 +6,6 @@ import React from "react";
 // import Profile from "views/admin/profile";
 // import DataTables from "views/admin/tables";
 // import RTLDefault from "views/rtl/default";
-import Dashboard from "../components/Dashboard/Dashboard";
 
 // // Auth Imports
 // import SignIn from "views/auth/SignIn";
@@ -19,6 +18,7 @@ import {
   MdPerson,
   MdLock,
 } from "react-icons/md";
+import DashboardPage from "../pages/DashboardPage";
 
 const routes = [
   {
@@ -26,7 +26,7 @@ const routes = [
     layout: "",
     path: "dashboard",
     icon: <MdHome className="h-6 w-6" />,
-    component: <Dashboard/>
+    component: <DashboardPage />
   },
 //   {
 //     name: "NFT Marketplace",
