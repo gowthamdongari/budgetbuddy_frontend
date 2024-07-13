@@ -9,7 +9,7 @@ import {
 } from "react-icons/io";
 import avatar from "../../assets/images/avatar7.png"
 
-function TopNavbar() {
+function TopNavbar({handleExpenseState}) {
   return (
     <nav className="sticky top-4 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-xl dark:bg-[#0b14374d]">
       <div className="ml-[6px]">
@@ -54,6 +54,7 @@ function TopNavbar() {
           /> */}
            <button
           href=" "
+          onClick={()=>handleExpenseState()}
           className="linear mt-1 mb-1 ml-1 mr-3 flex items-center justify-center rounded-xl bg-red-500 px-2 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200"
         >
           Add Expense
