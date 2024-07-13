@@ -3,8 +3,13 @@ import { Navigate, Outlet } from "react-router-dom";
 import SideNavBar from "../components/sidenavbar/SideNavBar";
 import Footer from "../components/common/Footer";
 import TopNavBar from "../components/topnavbar/TopNavBar";
+import AddTransactionModal from "../components/Transaction/AddTransactionModal";
 
 const Home = () => {
+  const [openExpense, setOpenExpense] = useState(false);
+  const handleExpenseState = () => {
+    setOpenExpense((prev) => !prev);
+  };
   return (
     <div className="flex h-full w-full">
       {/* Side Navbar */}
@@ -16,7 +21,9 @@ const Home = () => {
         >
           <div className="h-full">
             {/* TopNavBar */}
-            <TopNavBar />
+            <TopNavBar 
+              handleExpenseState={handleExpenseState}
+            />
             <div className="pt-5s mx-auto bg-navy-800/10 mb-auto h-full min-h-[84vh] p-2 md:pr-2">
               <Outlet />
             </div>
@@ -26,6 +33,10 @@ const Home = () => {
           </div>
         </main>
       </div>
+      <AddTransactionModal
+        openExpense={openExpense}
+        handleExpenseState={handleExpenseState}
+      />
     </div>
   );
 };
