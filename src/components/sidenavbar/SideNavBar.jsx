@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Links from "./Links";
 import SidebarCard from "./SidebarCard";
 import routes from "../../routes/routes";
+import FriendsList from "../friendsList/FriendsList";
 
 function SideNavBar() {
   return (
@@ -31,7 +32,8 @@ function SideNavBar() {
         </ul>
         {/* Free Horizon Card */}
       <div className="flex justify-center">
-        <SidebarCard />
+        <FriendsList/>
+        {/* <SidebarCard /> */}
       </div>
 
       {/* Nav item end */}
