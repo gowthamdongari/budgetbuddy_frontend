@@ -22,5 +22,11 @@
     "person": "Ram",
     "amount": "$ 31",
     "category": "individual"
+  },
+  {
+    "name": "You OWE",
+    "person": "Nitin",
+    "amount": "$ 87",
+    "category": "Villagers"
   }
 ]

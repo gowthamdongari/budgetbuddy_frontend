@@ -6,7 +6,8 @@ import Widget from "../widget/Widget";
 import ComplexTable from "./Components/ComplexTable";
 
 import {columnsDataCheck, columnsDataComplex} from "./variables/columnsData";
-import tableDataComplex from "./variables/tableDataComplex.json"
+import tableDataComplexYouOwe from "./variables/tableDataComplexYouOwe.json"
+import tableDataComplexYouGet from "./variables/tableDataComplexYouGet.json"
 
 function GroupDashboard() {
   return (
@@ -42,10 +43,20 @@ function GroupDashboard() {
         
 
         {/* Complex Table , Task & Calendar */}
-
+        
         <ComplexTable
           columnsData={columnsDataComplex}
-          tableData={tableDataComplex}
+          tableData={tableDataComplexYouOwe}
+          TableName="You PAY"
+          titleColor={"text-red-700"}
+          subtitleColor={"text-red-400"}
+        />
+        <ComplexTable
+          columnsData={columnsDataComplex}
+          tableData={tableDataComplexYouGet}
+          TableName="You GET"
+          titleColor={"text-green-700"}
+          subtitleColor={"text-green-600"}
         />
 
       </div>
